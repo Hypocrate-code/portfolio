@@ -1,0 +1,112 @@
+.container {
+    /* margin-inline: auto; */
+    max-width: 35rem;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.container > * {
+    margin-block: .5rem;
+}
+.titleContainer img {
+    width: 3.5em;
+    height: 3.5em;
+    transform: translateY(-10%);
+}
+.container button,
+.container select {
+    width: max-content;
+    padding: .4em 1.5em .5em;
+    border: none;
+    cursor: pointer;
+}
+.container select {
+    border-radius: .2em;
+    font-size: 1.35em;
+    padding-inline: 1em;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
+    appearance: none;
+    text-align: center;
+    border: var(--stroke-width) solid var(--primary-color);
+    color: var(--secondary-color);
+}
+.container select option {
+    font-size: .95em;
+}
+
+.alertText {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-block: .8rem 0;
+}
+
+.counter {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.slider {
+    --size: 1em;
+    font-size: 1.5em;
+    height: var(--size);
+    position: relative;
+    max-width: 14em;
+    width: 100%;
+}
+.btn, .bar {
+    position: absolute;
+    border-radius: .2em;
+}
+.btn {
+    height: var(--size);
+    width: var(--size);
+    background: var(--secondary-color);
+    z-index: 2;
+    cursor: pointer;
+}
+.bar {
+    width: 100%;
+    opacity: .95;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    height: calc(var(--size) / 2);
+    background: var(--primary-color);
+
+}
+
+.container button {
+    font-size: 1.4em;
+    background-color: var(--secondary-color);
+    color: var(--light);
+    border: var(--stroke-width) solid var(--secondary-color) !important;
+    border-radius: .2em;
+    padding-block: .3em .4em;
+    transition: all .2s ease-in-out;
+    margin-top: .8rem
+}
+.container button:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+.fullScreenContainer {
+    transform: translateY(-3%);
+    display: none;
+}
+
+.fullScreenContainer:nth-child(1) {
+    display: block;
+}
+
+@media screen and (max-width: 450px) {
+    .titleContainer h1 {
+        font-size: 4.5em;
+    }
+    .container p {
+        width: 80%;
+        font-size: 1.4em;
+    }
+}
