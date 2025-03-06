@@ -19,21 +19,25 @@ body {
     background-color: var(--light);
 }
 section {
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-h1 {
+h1, h2 {
     font-size: 5.25em;
-    width: max-content;
-    margin-inline: auto;
+    width: auto;
+    text-align: center;
     font-weight: 600;
-    letter-spacing: -5%;
+    letter-spacing: -.05em;
     position: relative;
     line-height: 90%;
     padding-bottom: .14em;
+}
+h2 {
+    font-size: 3em;
+    font-weight: 500;
 }
 h1::after {
     content: "";
@@ -57,7 +61,9 @@ h1::after {
 }
 p {
     font-size: 1.15rem;
-    width: 65%;
+    width: auto;
+    max-width: 20em;
+    line-height: 144%;
     display: block;
     margin-inline: auto;
 }

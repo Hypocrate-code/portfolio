@@ -1,3 +1,13 @@
+.fullScreenContainer {
+    padding: 2rem;
+    /* transform: translateY(-3%); */
+    display: none;
+}
+
+.fullScreenContainer:nth-child(1) {
+    display: block;
+}
+
 .container {
     /* margin-inline: auto; */
     max-width: 35rem;
@@ -18,12 +28,12 @@
 .container button,
 .container select {
     width: max-content;
-    padding: .4em 1.5em .5em;
+    padding: .5em 1.5em;
     border: none;
     cursor: pointer;
 }
 .container select {
-    border-radius: .2em;
+    border-radius: .25em;
     font-size: 1.35em;
     padding-inline: 1em;
     /* -webkit-appearance: none;
@@ -32,6 +42,7 @@
     text-align: center;
     border: var(--stroke-width) solid var(--primary-color);
     color: var(--secondary-color);
+    background-color: var(--light);
 }
 .container select option {
     font-size: .95em;
@@ -58,7 +69,7 @@
 }
 .btn, .bar {
     position: absolute;
-    border-radius: .2em;
+    border-radius: .25em;
 }
 .btn {
     height: var(--size);
@@ -82,23 +93,85 @@
     font-size: 1.4em;
     background-color: var(--secondary-color);
     color: var(--light);
-    border: var(--stroke-width) solid var(--secondary-color) !important;
-    border-radius: .2em;
-    padding-block: .3em .4em;
+    border: var(--stroke-width) solid var(--secondary-color);
+    border-radius: .25em;
     transition: all .2s ease-in-out;
-    margin-top: .8rem
+    margin-top: .8rem;
 }
-.container button:hover {
+.container button:hover,
+.gameContainer button {
     background-color: transparent;
     color: var(--secondary-color);
 }
-.fullScreenContainer {
-    transform: translateY(-3%);
-    display: none;
+.gameContainer {
+    max-width: 50rem;
+    position: relative;
+}
+.blinkBtn {
+    animation: blink .5s ease-in-out .2s infinite;
+}
+@keyframes blink {
+    50% {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+}
+.gamePearsContainer {
+    display: flex;
+    margin-inline: auto;
+}
+.gamePear {
+    --size: 3em;
+    height: var(--size);
+    width: var(--size);
+}
+.darkPear {
+    filter: brightness(30%);
 }
 
-.fullScreenContainer:nth-child(1) {
-    display: block;
+.word {
+    font-weight: 500;
+    font-size: 1.4em;
+}
+.word::before {
+    content: open-quote;
+}
+.word::after {
+    content: close-quote;
+}
+.wordsContainer {
+    display: flex;
+    gap: 0 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wordsContainer button {
+    padding: .3em .5em;
+}
+.wrong {
+    /* background-color: var(--primary-color) !important; */
+    color: var(--primary-color) !important;
+    border: var(--stroke-width) solid var(--primary-color) !important;
+}
+.good {
+    background-color: var(--secondary-color) !important;
+    color: var(--light) !important;
+}
+
+.endContainer {
+    outline: .125em solid var(--state-color);
+    padding: 1em 1.25em;
+    border-radius: .4em;
+}
+.endContainer button {
+    padding: .5em 1em;
+}
+
+.winGame {
+    --state-color: var(--primary-color);
+}
+.endGame {
+    --state-color: var(--secondary-color);
 }
 
 @media screen and (max-width: 450px) {
