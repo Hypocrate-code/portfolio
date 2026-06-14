@@ -31,10 +31,7 @@ function Lu() {
 
         const updateCamera = (cam : THREE.PerspectiveCamera) => {
             if (window.innerWidth > 250 && window.innerWidth <= 350) {
-                // console.log(camera)                    
                 cam.fov = 90;
-                // cam.position.fromArray([ 40.4065455548676, 25.25047987460781, 37.87808559996682 ]);
-                // cam.quaternion.fromArray([ -0.19591440505572982, 0.38657323466678334, 0.08440840062269932, 0.89724796017335 ]);
                 cam.position.fromArray([25.20168922495842, 15.37553343330217, 22.15704916083716]);
                 cam.quaternion.fromArray([ -0.18197653209566625, 0.411422189022287, 0.0842064045613917, 0.889115068805713 ]);
             }
@@ -85,15 +82,15 @@ function Lu() {
             height: window.innerHeight
         }
         const TextureMap = {
-            1: "/lu/textures/1.webp",
-            2: "/lu/textures/2.webp",
-            3: "/lu/textures/3.webp",
-            4: "/lu/textures/4.webp",
-            5: "/lu/textures/5.webp",
-            6: "/lu/textures/6.webp",
-            7: "/lu/textures/7.webp",
-            8: "/lu/textures/8.webp",
-            9: "/lu/textures/9.webp"
+            1: "/lu/textures/compressed/1.webp",
+            2: "/lu/textures/compressed/2.webp",
+            3: "/lu/textures/compressed/3.webp",
+            4: "/lu/textures/compressed/4.webp",
+            5: "/lu/textures/compressed/5.webp",
+            6: "/lu/textures/compressed/6.webp",
+            7: "/lu/textures/compressed/7.webp",
+            8: "/lu/textures/compressed/8.webp",
+            9: "/lu/textures/compressed/9.webp"
         }
 
         const LoadedTexture: Record<string, THREE.Texture> = {};
@@ -129,25 +126,9 @@ function Lu() {
         updateCamera(camera);
         // camera.lookAt(6, 4, 6    );
 
-        gsap.from(camera.position, {
-            duration: 3,
-            z: camera.position.z,
-            y: camera.position.y,
-            x: 4,
-            ease: "power2.out",
-        });
-        gsap.from(camera.quaternion, {
-            duration: 3,
-            x: 0.2,
-            y: camera.position.y,
-            z: camera.position.z,
-            ease: "power2.out",
-        });
 
 
 
-
-                    // camera.position.z = 10;
         camera.updateProjectionMatrix();
 
         interface ClickableMesh {
@@ -193,13 +174,14 @@ function Lu() {
             'lu/models/ROOM_v15-v1.glb',
             (glb) => {
                 glb.scene.traverse(child =>{
-                    // console.log(child);
+                    // console.log(child);2
                     
                     if (child instanceof THREE.Mesh) {
                         if (Object.keys(TextureMap).includes(child.name)) {
                             const material = new THREE.MeshBasicMaterial({
                                 map: LoadedTexture[child.name]
                             })
+                            material.color.multiplyScalar(1.8);
                             child.material = material;
                             if (child.material.map) {
                                 child.material.map.minFilter = THREE.LinearFilter;
@@ -266,6 +248,7 @@ function Lu() {
                         
                     }
                 })
+
                 scene.add(glb.scene);
            }
         )
@@ -282,10 +265,14 @@ function Lu() {
             renderer.dispose();
             renderer.setSize(sizes.width, sizes.height);
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-            renderer.setClearColor(0x0a0733);
+            // renderer.setClearColor(0x0a0733);
+            // renderer.setClearColor(0x0E0A3B);
+            renderer.setClearColor(0x110D42);
 
             const controls = new OrbitControls(camera, renderer.domElement);
             controls.enablePan = false;
+            controls.enableRotate = false;
+            controls.enableZoom = false;
             controls.enableDamping = true;
             controls.dampingFactor = 0.04;
             controls.update();
@@ -297,24 +284,22 @@ function Lu() {
             controls.minDistance = 6;
             controls.maxDistance = 60;
 
+            gsap.from(camera.position, {
+                duration: 1.7,
+                z: camera.position.z,
+                y: camera.position.y,
+                x: 4,
+                ease: "power2.out",
+                onComplete: () => {
+                    controls.enableRotate = true;
+                    controls.enableZoom = true;
+                }
+            });
 
             document.body.appendChild(renderer.domElement);
 
-            
-            
-            
-            
-
-
-
-
-
             const animate = () => {
                 controls.update();
-                // console.log('pos', camera.position.toArray());
-                // console.log('quat', camera.quaternion.toArray());
-                // console.log('pos', camera.position.toArray());
-                // console.log('qat', camera.quaternion.toArray());
                 renderer.render(scene, camera);
                 window.requestAnimationFrame(animate);
             }
@@ -337,12 +322,6 @@ function Lu() {
 
         }
 
-
-
-
-
-
-
     }, [])
     return (
         <>
@@ -355,6 +334,10 @@ function Lu() {
                         />
                     </div>
                 </div>
+                <Image
+                    src={dev_by_hypocrate}
+                    alt='credits to hypocrate'
+                />
             </div>
             <canvas id='threeCanvas'/>
         </>

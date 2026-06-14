@@ -14,7 +14,8 @@ html, body {
     margin: auto;
     z-index: 10;
     position: fixed;
-    background: #0a0733;
+    /* background: #0a0733; */
+    background: #110D42;
     left: 0;
     top: 0;
     height: 95vh;
@@ -27,6 +28,13 @@ html, body {
 .loader img {
     width: 2rem;
     height: auto;
+}
+.loader > img {
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    width: 10.4rem;
+    transform: translateX(-50%);
 }
 
 .loader .container {
