@@ -1,0 +1,70 @@
+.section {
+    font-size: 1rem;
+    max-width: 48em;
+    padding-inline: 3em;
+    margin-inline: auto;
+    padding-top: 0;
+    margin-bottom: 1em;
+}
+.section h2 {
+    margin-block: .55em;
+}
+.section h2::after {
+    transform-origin: left;
+    left: 0%;
+    transform: translateX(0%) skewX(30deg);
+}
+.section h2.barToShow::after {
+    /* transform: translateX(0%) skewX(30deg) scaleX(0) !important; */
+}
+.section a,
+.section p {
+    white-space: pre-line;
+    font-weight: 300 !important;
+    line-height: 120%;
+}
+.withMapBigContainer {
+    width: 100%;
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 1fr 1fr;
+}
+.infosContainer {
+    margin-bottom: 2em;
+}
+.infoContainer {
+    margin-inline: .3em;
+    margin-block: .8em 1em;
+    display: flex;
+    gap: .2em;
+}
+.infoContainer p:nth-child(1) {
+    width: max-content;
+    flex-shrink: 0;
+}
+.section b {
+    text-decoration: underline;
+    font-weight: 500;
+}
+.map {
+    border-radius: .3em;
+    border: .1em solid var(--mid-light-color);
+    --size: 27em;
+    height: auto;
+    min-height: 15em;
+    width: auto;
+}
+
+@media screen and (max-width: 770px) {
+    .withMapBigContainer {
+        grid-template-rows: max-content 1fr;
+        grid-template-columns: 1fr;
+    }
+    .infosContainer {
+        margin-bottom: .25em;
+    }
+    .map {
+        width: 95%;
+        margin-inline: auto;
+    }
+}

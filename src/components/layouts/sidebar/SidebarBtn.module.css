@@ -1,0 +1,130 @@
+.sidebarBtn {
+    --top: 2.5em;
+    position: fixed;
+    cursor: url('../../../app/lezartsaki/public/ui/assets/cursor.png'), pointer;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.05rem;
+    display: block;
+    padding: .35em .27em;
+    left: 2.2em;
+    top: var(--top);
+    border-radius: .15em;
+    z-index: 12;
+    transform: translateX(-5em);
+    transition: transform .5s var(--bezier), background-color .15s var(--bezier);
+    transform-origin: center;
+    -webkit-tap-highlight-color: transparent;
+    visibility: hidden;
+}
+
+.sidebarBtn:focus {
+    outline: none;
+}
+.sidebarBtn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -.2em;
+    left: -2.2em;
+    width: calc(100% + 2.4em);
+    border-radius: 0 .15em .15em 0;
+    height: calc(100% + .4em);
+    background-color: var(--navbar-color);
+    opacity: 0.7;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+.sidebarBtn > .bar {
+    transition: transform .15s var(--bezier), opacity .1s var(--bezier) .15s;
+    height: .2em;
+    background-color: var(--light-color);
+    width: 1.7em;
+    /* border-radius: .07em; */
+    transform: skewX(25deg);
+}
+.sidebarBtn > .bar:nth-child(2) {
+    margin-block: .35em;
+}
+.sidebarBtn.active .bar:nth-child(1) {
+    animation: first-bar .4s var(--bezier) forwards;
+    transform: none;
+}
+.sidebarBtn.inactive .bar:nth-child(1) {
+    animation: first-bar-reversed .4s var(--bezier) forwards;
+}
+.sidebarBtn.inactive .bar:nth-child(3) {
+    animation: second-bar-reversed .4s var(--bezier) forwards;
+}
+.sidebarBtn.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.sidebarBtn.active .bar:nth-child(3) {
+    animation: second-bar .4s var(--bezier) forwards;
+    transform: none;
+}
+@keyframes first-bar {
+    30% {
+        transform: translateY(.55em);
+    }
+    60% {
+        transform: translateY(.55em);
+    }
+    to {
+        transform: translateY(.55em) rotate(45deg);
+    }
+}
+@keyframes first-bar-reversed {
+    from {
+        transform: translateY(.55em) rotate(45deg);
+    }
+    30% {
+        transform: translateY(.55em);
+    }
+    60% {
+        transform: translateY(.55em);
+    }
+}
+@keyframes second-bar {
+    30% {
+        transform: translateY(-.55em);
+    }
+    60% {
+        transform: translateY(-.55em);
+    }
+    to {
+        transform: translateY(-.55em) rotate(-45deg);
+    }
+
+}
+@keyframes second-bar-reversed {
+    from {
+        transform: translateY(-.55em) rotate(-45deg);
+    }
+    30% {
+        transform: translateY(-.55em);
+    }
+    60% {
+        transform: translateY(-.55em);
+    }
+}
+@media screen and (max-width: 750px) {
+    .sidebarBtn {
+        --top: calc( (calc( calc((100vh - (60vh + 1.8rem + .23rem)) / 2) + 1rem) - 2.4em) / 2 );
+        --top: calc( (calc( calc((100dvh - (60vh + 1.8rem + .23rem)) / 2) + 1rem) - 2.4em) / 2 );
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 520px) {
+    .sidebarBtn {
+        --top: calc( (calc( calc((100vh - (60vh + 2.16rem + .276rem)) / 2) + 1rem) - 2.4em) / 2 );
+        --top: calc( (calc( calc((100dvh - (60vh + 2.16rem + .276rem)) / 2) + 1rem) - 2.4em) / 2 );
+        left: 1.5em;
+    }
+}
+@media screen and (max-width: 430px) {
+    .sidebarBtn {
+        font-size: 1.5rem;
+    }
+}

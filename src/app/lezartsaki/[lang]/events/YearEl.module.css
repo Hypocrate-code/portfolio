@@ -1,0 +1,159 @@
+.vertical {
+    --height: 85vh;
+}
+.vertical .imgContainer {
+    min-height: var(--height);
+}
+
+.year {
+    position: relative;
+    --inner-light-color: #c0bfbfd3;
+    --margin: 2em;
+    margin-block: var(--margin);
+}
+@media screen and (min-width: 850px) {
+    .vertical {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .vertical .imgContainer {
+        height: auto;
+        width: auto;
+        position: relative;
+        box-shadow: none;
+        grid-area: 1/2/2/3;
+    }
+    .vertical .imgYearContainer {
+        width: auto;
+        transform: translateY(calc(-1 * (var(--max-height) - .115em)));
+    }
+    .vertical:nth-last-child(1) .imgYearContainer {
+        height: calc(100% + var(--max-height) - .85em);
+    }
+    .vertical .imgContainer h2 {
+        text-align: left;
+        transform: translateX(-.1rem);
+    }
+}
+.imgContainer {
+    /* position: relative; */
+    --mid-light-color: rgba(235, 234, 234, 0.55);
+    height: var(--max-height);
+    position: static;
+    width: 100%;
+    border-radius: .4rem;
+    contain: paint;
+    border: var(--stroke-width) solid var(--inner-light-color);
+    box-shadow: 0 0 1.5rem hsla(0, 0%, 100%, 0.1);
+}
+.imgYearContainer {
+    height: calc(100% + (var(--max-height) - .115em)*2);
+    transform: translateY(calc(-1 * (var(--max-height) - .115em)));
+}
+.year:nth-child(2) .imgYearContainer {
+    transform: none !important;
+    height: calc(100% + (var(--max-height) - .115em)) !important;
+}
+.year:nth-child(2) .imgYearContainer h2 {
+    top: calc((100% - var(--max-height))/2) !important;
+}
+.imgContainer img {
+    background-color: var(--navbar-color);
+    position: absolute;
+    z-index: 0;
+    inset: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.redirect {
+    font-family: var(--primary-font);
+    line-height: 170%;
+    color: var(--main-title-color);
+    /* height: var(--button-height); */
+    padding-top: .125em;
+    font-size: 1.35em;
+    width: max-content;
+    padding-inline: .75em;
+    margin-inline: auto;
+    z-index: 0;
+    display: block;
+    letter-spacing: .03em;
+    text-align: center;
+    background-color: transparent;
+    /* margin-left: .5em; */
+    /* clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%); */
+    display: block;
+    transition: background-color .2s var(--bezier);
+    position: relative;
+    /* border: .15em var(--contrast-color) solid; */
+}
+.redirect::before,
+.redirect::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: var(--contrast-color);
+    z-index: -1;
+    clip-path: polygon(var(--skewed-corner-size) 0, calc(100% - var(--skewed-corner-size)) 0, 100% 100%, 0% 100%);
+}
+.redirect::after {
+    clip-path: polygon(var(--skewed-corner-size) 0, calc(100% - var(--skewed-corner-size)) 0, 99.5% 100%, .5% 100%);
+    height: calc(100% - .25em) ;
+    width:  calc(100% - .25em);
+    left: 50%;
+    top: 49.5%;
+    transform: translate(-50%, -50%);
+    transition: background-color .15s var(--bezier);
+}
+.redirect:focus-visible::after,
+.redirect:hover::after {
+    background-color: var(--dark-color);
+}
+
+.eventContainer {
+    font-size: .95rem;
+    position: relative;
+    border-left: var(--stroke-width) solid hsla(0, 1%, 75%, 0.4);
+    /* padding-inline: 1.2em; */
+    padding-inline: calc(.65rem + .55vw);
+    /* margin-inline: .8em; */
+    margin-inline: .125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+    z-index: 2;
+    height: max-content;
+    margin-top: var(--margin);
+}
+/* .first {
+    margin-top: calc(var(--margin) / 2); 
+} */
+.vertical .eventContainer {
+    margin-top: calc(var(--margin)/2);
+}
+
+.eventContainer::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--stroke-width);
+    height: 100%;
+    left: calc(var(--stroke-width) * -1);
+    background-color: var(--inner-light-color);
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 1s var(--bezier);
+}
+.eventContainer.seen::after {
+    transform: scaleY(1);
+}
+@media screen and (max-width: 400px) {
+    .imgContainer {
+        box-shadow: 0 0 2rem hsla(0, 0%, 100%, 0.2);
+    }
+    .vertical {
+        --height: 50vh;
+    }
+}

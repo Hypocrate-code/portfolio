@@ -1,0 +1,34 @@
+{
+    "h1": "Cerb3re",
+    "description": "CERB3RE Reims Metal Fest : a new event in Champagne's heart.",
+    "errorText": "Your browser doesn't support HTML5 videos.",
+    "waitingText": "More information coming soon.",
+    "mainText": "CERB3RE Reims Metal Fest : a new event in Champagne's heart !\n\nPrepare yourself to live 3 days full of Metal music with the CERB3RE Reims Metal Fest !\nAn event growing on a bold triptych : \n3 days, 3 places, and above all, 3 reasons to celebrate our Arts of living !\n\nThe CERB3RE Reims Metal Fest isn't only a festival, it's also a dynamic of support and collaboration with our ecosystem's agents.\nSince 2018, this desire to create a fest not like others on Reims's lands was running in our heads : Reims deserves a yearly event dedicated to our esthetic's wealth.\nOur ambition ? Open the doors of this culture often unknown, making it accessible to everyone, even families.\n\nReady to rock ? \nThe Lez Arts Aki team is waiting to write with you a new chapter of our adventure.",
+    "firstDate" : {
+        "title": "Day 1 : Friday December 5th",
+        "mobileImg": "/lezartsaki/assets/cerb3re/05_12_2025/Page_Cerb3re.png",
+        "desktopImg": "/lezartsaki/assets/cerb3re/05_12_2025/Billetterie.png",
+        "text": "Get ready to experience 3 days of intense Metal, fellas ! \n\nWe wanted this first evening to be just like the very first date organized by the association: intimate and electric. \n\nBy choosing Le Lieu as the opening scene, the proximity of the artists to the public will be the key word. \n\nOn the program: Inward (Deathcore / Modern Metal), Death Awaits (Death / Thrash Metal) and Survival Zero (Metal)",
+        "link": "https://www.helloasso.com/associations/lez-arts-aki/evenements/cerb3re-inward-death-awaits-survival-zero",
+        "btnText": "Tickets for December 5th",
+        "altPoster": "Poster of the first date of Cerb3re 2025 edition, our metal music festival."
+    },
+    "secondDate" : {
+        "title": "Day 2 : Saturday December 6th",
+        "mobileImg": "/lezartsaki/assets/cerb3re/06_12_2025/Page_Cerb3re.png",
+        "desktopImg": "/lezartsaki/assets/cerb3re/06_12_2025/Billetterie.png",
+        "text": "You're conveyed by Lez Arts Aki to La Cartonnerie, Saturday the 6th of December 2025, with a poster as electric as crazy!\n\nIs programmed : Les Tambours du Bronx (Industrial Metal), Benighted (Brutal Death Metal), Knuckle Head (Dark Country / Stoner Rock), Akiavel (Death Metal) and Northern Lights (Newcore).\n\n1 place, 5 groups, and even more will to meet you in the Pit !",
+        "link": "https://www.cartonnerie.fr/evenement/lez-arts-aki-cerb3re/",
+        "btnText": "Tickets for December 6th",
+        "altPoster": "Poster of the second date of Cerb3re 2025 edition, our metal music festival."
+    },
+    "thirdDate" : {
+        "title": "Day 3 : Sunday December 7th",
+        "mobileImg": "/lezartsaki/assets/cerb3re/07_12_2025/Page_Cerb3re.png",
+        "desktopImg": "/lezartsaki/assets/cerb3re/07_12_2025/Billetterie.png",
+        "text": "CERB3RE Reims Metal Fest isn't just a festival; it's also an opportunity to promote the often overlooked metal genre, making it accessible to everyone!\n\nWe've designed this Sunday event for youngers and olders.\n\nThe planning : a photo exhibit presented by Camille Brulé, a lecture led by Corentin Charbonnier on this genre, which we've elevated to the status of an art form, and a Metal For Kids preformance for young audiences.\n\nA friendly time for sharing, exchanging, and sharing our values!\n\nLet's all experience it together, friends!",
+        "link": "https://www.helloasso.com/associations/lez-arts-aki/evenements/cerb3re-une-expo-une-conference-un-metal-kids",
+        "btnText": "Tickets for December 7th",
+        "altPoster": "Poster of the third date of Cerb3re 2025 edition, our metal music festival."
+    }
+}

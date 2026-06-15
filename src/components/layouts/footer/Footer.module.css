@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--navbar-color);
+    font-size: .98rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 2em;
+}
+.footer h3 .animatedLetter {
+    animation: none !important;
+    display: none !important;
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        font-size: 1.35rem;
+        padding-left: 1.5em;
+    }
+}

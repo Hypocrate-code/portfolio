@@ -1,0 +1,207 @@
+{
+    "h1": "Nos Événements",
+    "description": "Depuis 2018, grâce à votre soutien nous avons pu organiser plus de 30 événements dédiés à notre ARTS de vivre dans la région Grand Est. Voici l’historique et bons nombres de souvenirs.",
+    "years": [
+        {
+            "year": 2025,
+            "img": "/lezartsaki/assets/cerb3re/07_12_2025/Billetterie.png",
+            "altImg": "Affiche du dernier jour du festival Cerb3re 2025, annulé.",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "Annulé",
+                    "artists": "Charcoal (Metal For Kids) / Exposition photos de Camille Brulé / Conférence sur le Metal par Corentin Charbonnier",
+                    "where": "Maison commune du Chemin Vert, Cerb3re"
+                },
+                {
+                    "date": "Annulé",
+                    "artists": "Les Tambours du Bronx / Benighted / Knuckle Head / Akiavel / Northern Lights",
+                    "where": "La Cartonnerie, Cerb3re"
+                },
+                {
+                    "date": "Annulé",
+                    "artists": "Inward / DeathAwaits / Survival Zero",
+                    "where": "Le Lieu, Cerb3re"
+                },
+                {
+                    "date": "03/05",
+                    "artists": "Protogonos / Drifting Away",
+                    "where": "Soissons, Saint-Jean-des-Vignes"
+                },
+                {
+                    "date": "19/04",
+                    "artists": "Locomuerte / Babylon Pression / Tourette",
+                    "where": "La Cartonnerie"
+                }
+            ]
+        },
+        {
+            "year": 2024,
+            "img": "/lezartsaki/assets/events/2024.jpeg",
+            "altImg": "Affiche pour le concert du 2 mars 2024, au DropKick bar.",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "09/11",
+                    "artists": "Dagoba / Deadwood",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "21/05",
+                    "artists": "Maudits / Parlor",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "19/04",
+                    "artists": "Landmvrks / The Devil Wears Prada / Like Moths To Flames / Guilt Trip",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "02/03",
+                    "artists": "Breed Machine / Fire Wheel / Sightless",
+                    "where": "Le Dropkick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2022,
+            "img": "/lezartsaki/assets/events/2022.jpg",
+            "altImg": "Affiche pour le concert du 25 avril 2022, à La Cartonnerie.",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "19/11",
+                    "artists": "Derby  Club  Metal  (Protogonos  /  Disconnected  /  Inward)",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "04/06",
+                    "artists": "Pray For Humanity / Down Trigger",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "22/05",
+                    "artists": "Forest In Blood / Dagara",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "25/04",
+                    "artists": "Warm Up Hellfest Tour",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "08/04",
+                    "artists": "Tremplin Lez Arts Aki !! (Insolvency / Inward / Northern Lights /Protogonos)",
+                    "where": "Le Dropkick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2021,
+            "img": "/lezartsaki/assets/events/2021.jpg",
+            "altImg": "Affiche pour le concert du 23 octobre 2021, à l'Espace Thierry Meng (Bétheny).",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "28/11",
+                    "artists": "The Butcher’s Rodeo / Sabertooth",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "23/10",
+                    "artists": "Loudblast / Unswabbed / Protogonos",
+                    "where": "Espace Thierry Meng (Bétheny)"
+                },
+                {
+                    "date": "09/10",
+                    "artists": "Rankken / Survival Zero",
+                    "where": "Le Dropkick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2020,
+            "img": "/lezartsaki/assets/events/2020.jpg",
+            "altImg": "Affiche pour le concert du 29 février 2020, au Dropkick bar.",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "29/02",
+                    "artists": "Bunker Project / Sumeria / Rankken",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "18/01",
+                    "artists": "Dagara / Psychoïd",
+                    "where": "Le Dropkick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2019,
+            "img": "/lezartsaki/assets/events/2019.jpg",
+            "altImg": "Affiche pour le concert du 18 mai 2019, au Dropkick bar.",
+            "ratioImg": "vertical",
+            "events": [
+                {
+                    "date": "31/10",
+                    "artists": "Ultra Vomit / Tagada / Black Bomb A",
+                    "where": "L’Atmosphère (Rethel)"
+                },
+                {
+                    "date": "18/05",
+                    "artists": "Smash Hit Combo / Babylon Pression / Undead",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "31/03",
+                    "artists": "Mars Red Sky",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "08/02",
+                    "artists": "Unswabbed / Through the Dusk",
+                    "where": "Le Dropkick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2018,
+            "img": "/lezartsaki/assets/events/2018.jpg",
+            "altImg": "Affiche pour le concert du 22 décembre 2018, au Dropkick bar.",
+            "ratioImg": "vertical",
+            "events": [
+                {
+                    "date": "22/12",
+                    "artists": "The Butcher’s Rodeo / The Butcher Mississipi / Calice",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "18/11",
+                    "artists": "AqMe / Malemort",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "27/10",
+                    "artists": "Lazy / Tribute Noir Désir / Sumeria",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "21/10",
+                    "artists": "Bukowski / Dirty Raven",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "18/09",
+                    "artists": "Black Bomb A / Sightless",
+                    "where": "Le Dropkick Bar"
+                },
+                {
+                    "date": "15/05",
+                    "artists": "Undead / Sky Machine / Midnight Blackout",
+                    "where": "Le Dropkick Bar"
+                }
+            ]
+        }
+    ]
+}

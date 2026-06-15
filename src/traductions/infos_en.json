@@ -1,0 +1,17 @@
+{
+    "h1": "Practical Info",
+    "description": "Here, you will find all the information for a seamless experience, don't hesitate to ask us anything.",
+    "adress": "House of associative life, LEZARTSAKI, MVA - 204/126\n122 bis Barbâtre street, 51100 Reims",
+    "ourAdressTitle": "Where to find us ?",
+    "adressCartoTitle": "How to go to La Cartonnerie ?",
+    "websiteHeader": "Website",
+    "adressHeader": "Address",
+    "phoneHeader": "Phone number",
+    "mailHeader": "E-Mail Address",
+    "cartonnerie": {
+        "website": "https://www.cartonnerie.fr/",
+        "adress": "La Cartonnerie\n84 Docteur Lemoine street, 51100 REIMS",
+        "phone": "03 26 36 72 40",
+        "mail": "info@cartonnerie.fr"
+    }
+}

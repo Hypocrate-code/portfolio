@@ -1,0 +1,68 @@
+{
+    "h1": "Notre Équipe",
+    "description": "Une vraie bande de déjantés.",
+    "members": [
+        {
+            "name": "Ludo",
+            "role": "Président",
+            "quote": "Faites les fous, pas les cons.",
+            "img": "/lezartsaki/assets/team/Ludovic.jpg",
+            "fb": "https://www.facebook.com/profile.php?id=100016574116080"
+        },
+        {
+            "name": "Marion",
+            "role": "Programmatrice",
+            "quote": "Le futur appartient à ceux qui croient à la beauté de leurs rêves.",
+            "img": "/lezartsaki/assets/team/Marion.jpg",
+            "fb": "https://www.facebook.com/marionboesch666/"
+        },
+        {
+            "name": "Sacha",
+            "role": "Régisseur Général",
+            "quote": "Si tu me comprends, franchement, bravo !",
+            "img": "/lezartsaki/assets/team/Sacha.jpg"
+        },
+        {
+            "name": "Camille",
+            "role": "Photographe",
+            "quote": "Photographe de l’ombre chasseuse de lumière.",
+            "img": "/lezartsaki/assets/team/Camille.jpg",
+            "ig": "https://www.instagram.com/camillebrulephoto/"
+        },
+        {
+            "name": "Johan",
+            "role": "Membre",
+            "quote": "Il n'y a pas de consensus ni de Cuba sans cacao.",
+            "img": "/lezartsaki/assets/team/Johan.jpg",
+            "group": "https://www.instagram.com/inwardmetalband/"
+        },
+        {
+            "name": "William",
+            "role": "Membre",
+            "quote": "Si tu as compris ce que je t'ai dis c'est que je me suis mal exprimé !",
+            "img": "/lezartsaki/assets/team/William.jpg",
+            "ig": "https://www.instagram.com/will.northernlights?igsh=M2hzN3dvaDluYzQ5",
+            "group": "https://www.instagram.com/northernlightsfr?igsh=eHB3NHV3Z2toODc="
+        },
+        {
+            "name": "Jeffrey",
+            "role": "Membre",
+            "quote": "Un enfant gâché.",
+            "img": "/lezartsaki/assets/team/Jeffrey.jpg"
+        },
+        {
+            "name": "Roman",
+            "role": "Membre",
+            "quote": "Le dernier mais pas des moindres.",
+            "img": "/lezartsaki/assets/team/Roman.jpg",
+            "ig": "https://www.instagram.com/rooman_vlt/"
+        },
+        {
+            "name": "Thibaut (Hypocrate)",
+            "role": "Développeur",
+            "quote": "Pourquoi.",
+            "img": "/lezartsaki/assets/team/Thibaut.jpg",
+            "ig": "https://www.instagram.com/hypocr4te/"
+        }
+    ]
+}

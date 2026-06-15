@@ -1,0 +1,82 @@
+.section {
+    width: auto;
+    height: auto;
+    max-width: 50rem;
+    /* padding-block: min(15vh, 10rem) 2rem; */
+    padding-inline: 2rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.section p {
+    font-size: 1.02em;
+    font-weight: 244;
+    color: var(--title-color);
+    letter-spacing: -.4%;
+    line-height: 160%;
+    white-space: pre-line;
+    /* text-align: center; */
+    padding-inline: 1.5em;
+    max-width: 40rem;
+    margin-inline: auto;
+}
+.section h2 {
+    margin-inline: auto;
+    width: max-content;
+    font-size: 2.2em;
+    margin-bottom: .4em;
+}
+.section h2::after {
+    transform-origin: center;
+    left: 15%;
+}
+.img {
+    width: 100%;
+    border-radius: .25rem;
+    margin-inline: auto;
+    margin-block: 0 .5em;
+    height: auto;
+}
+.section a {
+    font-family: var(--primary-font);
+    line-height: 170%;
+    color: var(--main-title-color);
+    margin-top: .3em;
+    padding-top: .125em;
+    font-size: 1.2em;
+    width: max-content;
+    padding-inline: .77em;
+    margin-left: 11%;
+    z-index: 0;
+    display: block;
+    letter-spacing: .03em;
+    text-align: center;
+    background-color: transparent;
+    display: block;
+    transition: background-color .2s var(--bezier);
+    position: relative;
+}
+.section a::before,
+.section a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: var(--contrast-color);
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%);
+}
+.section a::after {
+    clip-path: polygon(.5% 0, 100% 0, calc(100% - var(--skewed-corner-size) + .5%) 100%, var(--skewed-corner-size) 99.5%);
+    height: calc(100% - .25em) ;
+    width:  calc(100% - .25em);
+    left: 49.8%;
+    top: 49.5%;
+    transform: translate(-50%, -50%);
+    transition: background-color .15s var(--bezier);
+}
+.section a:focus-visible::after,
+.section a:hover::after {
+    background-color: var(--dark-color);
+}

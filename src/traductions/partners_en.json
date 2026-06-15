@@ -1,0 +1,56 @@
+{
+    "h1": "Our Partners",
+    "description": "Our partners play an essential role in our success: their contribution and support allow us to expand our projects and establish an important territorial dynamic. And they also support our cracked brains!",
+    "alt": "Icon of ",
+    "redirection": "Learn about it",
+    "partners" : [
+        {
+            "name": "La Cartonnerie",
+            "description": "Event hall in Reims.",
+            "link": "https://www.cartonnerie.fr/",
+            "logo": "/lezartsaki/assets/partners/lacartonnerie.png"
+        },
+        {
+            "name": "Grabuge Network",
+            "description": "Network for the development of artists and cultural structures.",
+            "link": "https://reseaugrabuge.com/",
+            "logo": "/lezartsaki/assets/partners/Grabuge.jpg"
+        },
+        {
+            "name": "Federation of Metal Music",
+            "description": "Promotes initiatives made in the Metal music industry.",
+            "link": "https://federationdesmusiquesmetalliques.com/",
+            "logo": "/lezartsaki/assets/partners/FMM.jpg"
+        },
+        {
+            "name": "LMProd 2.0",
+            "description": "Communication company of Marion Boesch, our Communication Manager & Programmer.",
+            "link": "https://www.instagram.com/lmprod2.0/",
+            "logo": "/lezartsaki/assets/partners/LMProd.jpg"
+        },
+        {
+            "name": "Radio Primitive",
+            "description": "Popular media education radio.",
+            "link": "https://radioprimitive.fr/",
+            "logo": "/lezartsaki/assets/partners/Radio_Primitive.png"
+        },
+        {
+            "name": "Bokal",
+            "description": "A media made in Reims on the cultural local scene.",
+            "link": "https://www.bokalreims.fr/",
+            "logo": "/lezartsaki/assets/partners/Bokal.jpg"
+        },
+        {
+            "name": "BGP Music Live",
+            "description": "French and international webzine on Rock, Metal and extreme musical genres.",
+            "link": "https://www.bgpmusiclive.com/",
+            "logo": "/lezartsaki/assets/partners/BGP.jpg"
+        },
+        {
+            "name": "ExactMusic InLive",
+            "description": "Share the music, it's great for your culture's health !",
+            "link": "https://www.facebook.com/p/ExactMusic-Inlive-100063604718974/",
+            "logo": "/lezartsaki/assets/partners/Exact_Music.jpg"
+        }
+    ]
+}

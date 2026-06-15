@@ -1,0 +1,51 @@
+.navbarContainer {
+    height: max-content;
+    background-color: var(--navbar-color);
+    padding: 0 1.7em;
+    box-shadow: 0 0 .15em #000000a6;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 0 0 .35em .35em;
+    width: max-content;
+    z-index: 10;
+    font-size: 0.86rem;
+    transform: translateX(-50%);
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6em;
+}
+.logo {
+    --size: 3.9em;
+    width: calc(var(--size)/1.3);
+    height: var(--size);
+    background-image: url("../../../app/lezartsaki/public/ui/assets/logo_black-nobg.png");
+    background-position: center;
+    background-size: cover;
+}
+.logo a {
+    width: 100%;
+    height: 100%;
+}
+.logo a::after {
+    display: none;
+}
+@media screen and (max-width: 990px) {
+    .navbarContainer {
+        width: 100%;
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    .navbarContainer {
+        visibility: hidden;
+        height: 2px;
+    }
+    .navbarContainer img {
+        display: none;
+    }
+}

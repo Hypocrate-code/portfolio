@@ -1,26 +1,29 @@
 // import Image from "next/image";
 
-import { Poppins } from "next/font/google";
 
 // import styles from "./page.module.css";
 
-import "./globals.css"
+import styles from "./page.module.css"
 
-const poppins = Poppins({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"]
-})
 
 export default function Home() {
   return (
-    <section className={poppins.className}>
-      <h1>Hi ! Welcome on Hypocrate's Portfolio</h1>
-      <h2>This is currently in building state. However, you can visit some of my projets here :</h2>
-      <ul>
-        <li><a href="/lu">3D project with Lucien Joly</a></li>
-        <li><a href="/Find_The_Pear">Find The Pear</a></li>
-      </ul>
-      <p>Made by Hypocrate</p>
-    </section>
+    <html lang="fr">
+      <body className={styles.body}>
+        <section className={styles.section}>
+          <h1 className={styles.h1}><i>Thibaut Alvoët / Hypocrate</i></h1>
+          <p className={styles.p}>Yo ! mon portfolio est en construction, mais vous pouvez visiter mes projets ici, du plus récent au plus ancien : </p>
+          <ul className={styles.ul}>
+            <li className={styles.li}>2025 - <a className={styles.a} href="https://github.com/Hypocrate-code/HypLoad">HypLoad</a> (logiciel Windows / MacOS et réalisation mini-film) pour télécharger des vidéos, musiques et playlists YouTube</li>
+            <li className={styles.li}>2025 - <a className={styles.a} href="/lu">le squat'</a> (3D et web) reproduction interactive de la chambre d'un ami, Lucien Joly</li>
+            <li className={styles.li}>2025 - <a className={styles.a} href="/lezartsaki">LezArtsAki</a> (vitrine web) une asso organisatrice de concerts et festivals</li>
+            <li className={styles.li}>2024 - <a className={styles.a} href="/Find_The_Pear">Find The Pear</a> (jeu web) pour améliorer son vocabulaire en anglais</li>
+            <li className={styles.li}>2023 - <a className={styles.a} href="https://Hypocrate-code.github.io/Robusto">Robusto</a> (vente web) création d'entreprise de vente de café</li>
+            <li className={styles.li}>2023 - <a className={styles.a} href="https://Hypocrate-code.github.io/Dernier_Choix">Dernier Choix</a> (jeu web) histoire à choix et fins multiples, sur notre rapport aux objets (sur grands écrans uniquement)</li>
+          </ul>
+          <p className={styles.p}>made by Hypocrate - everything available on <a className={styles.a} href="github.com/Hypocrate-code">GitHub</a></p>
+        </section>
+      </body>
+    </html>
   );
 }

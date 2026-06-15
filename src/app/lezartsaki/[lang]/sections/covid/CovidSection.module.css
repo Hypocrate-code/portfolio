@@ -1,0 +1,38 @@
+.paragraph {
+    text-align: center;
+    width: 80%;
+    font-size: .95em;
+    line-height: 170%;
+    margin: 2.2em auto;
+}
+.videosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+    .section {
+        padding-inline: 1rem;
+        font-size: 1.15rem;
+    }
+    .paragraph {
+        width: 90%;
+        font-size: .9em;
+    }
+    .h2 {
+        text-align: center;
+        width: auto;
+    }
+    .h2::after {
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .paragraph {
+        font-size: 1em;
+    }
+}

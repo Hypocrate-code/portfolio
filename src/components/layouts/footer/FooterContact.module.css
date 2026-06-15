@@ -1,0 +1,89 @@
+.footerBox:nth-child(2) {
+    --height-of-inputs: 2.35em;
+    width: 18em;
+    font-size: 1em;
+}
+.footerBox:nth-child(2) h3::after {
+    transition-delay: .2s !important;
+}
+.footerBox:nth-child(2) .footerBoxContent {
+    margin-top: .9em;
+}
+.footerBox:nth-child(2) .footerBoxContent > * {
+    margin-block: .4em;
+}
+
+.footerBox:nth-child(2) select,
+.footerBox:nth-child(2) input {
+    background-color: var(--light-color);
+    color: var(--mid-dark-color);
+    font-size: .7em;
+    padding: .4em;
+    width: 17em;
+    border: none;
+    border-radius: .3em;
+    margin-left: .5em;
+    cursor: url('../../../app/lezartsaki/public/ui/assets/cursor.png'), pointer;
+    height: var(--height-of-inputs);
+}
+.footerBox:nth-child(2) input {
+    cursor: text;
+    transition: border-left .1s var(--bezier);
+}
+.footerBox:nth-child(2) textarea {
+    display: block;
+    background-color: var(--light-color);
+    border: none;
+    height: 8em;
+    width: 93%;
+    margin-left: .5em;
+    border-radius: .3em;
+    font-size: .7em;
+    padding: .4em;
+    color: var(--mid-dark-color);
+    font-weight: 500;
+    resize: none;
+    transition: border-left .1s var(--bezier);
+}
+.footerBox:nth-child(2) textarea:focus,
+.footerBox:nth-child(2) input:focus {
+    border-left: 2px solid var(--contrast-color);
+    outline: none;
+}
+.footerBox:nth-child(2) button {
+    width: max-content;
+    padding: 0.1em .6em 0;
+    height: calc(var(--height-of-inputs) - .35em);
+    letter-spacing: .05em;
+    /* margin-left: auto; */
+    margin-left: .4em;
+    font-size: .83em;
+    border-radius: .3em;
+    background-color: var(--contrast-color);
+    color: var(--light-color);
+    transition: background-color .2s var(--bezier);
+    outline-offset: -2px;
+    outline: var(--contrast-color) 2px solid;
+}
+.footerBox:nth-child(2) button:focus-visible,
+.footerBox:nth-child(2) button:hover {
+    background-color: transparent;
+}
+@media screen and (max-width: 650px) {
+    .footerBox:nth-child(2) h3::after {
+        transition-delay: 0;
+    }
+}
+.footerBox:nth-child(2) p {
+    display: none;
+}
+
+.status {
+    display: block !important;
+    font-size: .7em;
+    font-style: italic;
+    color: var(--light-color);
+    /* height: 0; */
+    /* transform: translateY(-.4em); */
+    margin-left: .5em;
+}

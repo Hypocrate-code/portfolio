@@ -1,0 +1,33 @@
+.sidebarContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--navbar-color);
+    width: 14em;
+    display: flex;
+    justify-content: center;
+    transition: transform .3s var(--bezier);
+    transform: translateX(-100%);
+    font-size: .96rem;
+    z-index: 11;
+}
+.sidebar {
+    margin-top: 36vh;
+    width: 60%;
+}
+.visible {
+    transform: none !important;
+}
+.sidebar > * {
+    visibility: hidden;
+}
+.visible > * > * {
+    visibility: visible;
+}
+
+@media screen and (max-width: 520px) {
+    .sidebarContainer {
+        font-size: 1.3rem;
+    }
+}

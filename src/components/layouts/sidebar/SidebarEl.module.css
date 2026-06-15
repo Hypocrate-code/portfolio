@@ -1,0 +1,59 @@
+.sidebarEl a {
+    margin-bottom: 1em;
+    display: block;
+    width: max-content;
+}
+.sidebarEl a {
+    position: relative;
+    transition: transform .1s linear;
+}
+.sidebarEl a::after {
+    content: '';
+    display: block;
+    height: .115em;
+    transform: scaleX(0) skew(20deg);
+    position: absolute;
+    bottom: -.14em;
+    left: 10%;
+    transition: transform .2s var(--bezier);
+    transition-delay: .1s;
+    background-color: var(--contrast-color);
+    left: 0;
+    width: 80%;
+    transform-origin: left;
+}
+.sidebarEl a:has(img)::after {
+    display: none;
+}
+.sidebarEl a:has(img):hover {
+    transform: none;
+}
+.sidebarEl a:focus-visible,
+.sidebarEl a:hover {
+    transform: translateY(-.1em);
+    outline: none;
+}
+.sidebarEl a:focus-visible::after,
+.sidebarEl a:hover::after {
+    transform: scaleX(1) skewX(20deg);
+}
+.sidebarEl a img {
+    height: 2.3em;
+    width: auto;
+}
+.current {
+    transform: translateY(-.1em) !important;
+    cursor: default;
+}
+.current::after {
+    transform: scaleX(1) skewX(20deg) !important;
+}
+
+@media screen and (max-width: 725px) {
+    .sidebarEl a::after {
+        width: 0%;
+    }
+    .current::after{
+        width: 70% !important;
+    }
+}

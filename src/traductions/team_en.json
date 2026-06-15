@@ -1,0 +1,68 @@
+{
+    "h1": "Our Team",
+    "description": "Only crazy people here.",
+    "members": [
+        {
+            "name": "Ludo",
+            "role": "President",
+            "quote": "Act as a weirdo, not an idiot.",
+            "img": "/lezartsaki/assets/team/Ludovic.jpg",
+            "fb": "https://www.facebook.com/profile.php?id=100016574116080"
+        },
+        {
+            "name": "Marion",
+            "role": "Programmer",
+            "quote": "The future belongs to those who believe in the beauty of their dreams.",
+            "img": "/lezartsaki/assets/team/Marion.jpg",
+            "fb": "https://www.facebook.com/marionboesch666/"
+        },
+        {
+            "name": "Sacha",
+            "role": "General Manager",
+            "quote": "If you do understand me, honestly, bravo !",
+            "img": "/lezartsaki/assets/team/Sacha.jpg"
+        },
+        {
+            "name": "Camille",
+            "role": "Photographer",
+            "quote": "Photographer in the shadows hunting light.",
+            "img": "/lezartsaki/assets/team/Camille.jpg",
+            "ig": "https://www.instagram.com/camillebrulephoto/"
+        },
+        {
+            "name": "Johan",
+            "role": "Member",
+            "quote": "There is no consensus and no Cuba without cocoa.",
+            "img": "/lezartsaki/assets/team/Johan.jpg",
+            "group": "https://www.instagram.com/inwardmetalband/"
+        },
+        {
+            "name": "William",
+            "role": "Member",
+            "quote": "If you understand what I just said, I certainly expressed myself badly !",
+            "img": "/lezartsaki/assets/team/William.jpg",
+            "ig": "https://www.instagram.com/will.northernlights?igsh=M2hzN3dvaDluYzQ5",
+            "group": "https://www.instagram.com/northernlightsfr?igsh=eHB3NHV3Z2toODc="
+        },
+        {
+            "name": "Jeffrey",
+            "role": "Member",
+            "quote": "A wasted kid.",
+            "img": "/lezartsaki/assets/team/Jeffrey.jpg"
+        },
+        {
+            "name": "Roman",
+            "role": "Membre",
+            "quote": "Last but not least.",
+            "img": "/lezartsaki/assets/team/Roman.jpg",
+            "ig": "https://www.instagram.com/rooman_vlt/"
+        },
+        {
+            "name": "Thibaut (Hypocrate)",
+            "role": "Developer",
+            "quote": "Why.",
+            "img": "/lezartsaki/assets/team/Thibaut.jpg",
+            "ig": "https://www.instagram.com/hypocr4te/"
+        }
+    ]
+}

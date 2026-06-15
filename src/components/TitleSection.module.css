@@ -1,0 +1,36 @@
+.titleSection {
+    padding-block: 5em 0;
+    margin: 0;
+    font-size: 1rem;
+}
+.titleSection h1 {
+    margin-inline: auto;
+}
+.titleSection h1::after {
+    left: 15%;
+}
+.titleSection p {
+    margin-block: 2em 2.5em;
+    font-size: .95em;
+    text-align: center;
+    line-height: 170%;
+    max-width: 40em;
+    margin-inline: auto;
+}
+@media screen and (max-width: 520px) {
+    .titleSection h1::after {
+        left: 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .titleSection * {
+        text-align: center;
+    }
+    .titleSection {
+        font-size: 1.1rem;
+        padding-top: 15vh;
+    }
+    .titleSection h1 {
+        margin-inline: auto;
+    }
+}

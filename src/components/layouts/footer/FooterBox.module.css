@@ -1,0 +1,42 @@
+.footerBox {
+    width: 13em;
+}
+.footerBoxContent {
+    height: calc(100% - 2em);
+    display: flex;
+    margin-top: 2em;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 0;
+}
+.footerBoxContent a {
+    display: flex;
+    padding: .3em;
+    gap: .5em;
+    font-size: .9em;
+    align-items: center;
+    border-radius: .4em;
+    margin-bottom: .1em;
+    /* background-color: red; */
+    width: 11em;
+    transition: background-color .1s var(--bezier), color .1s var(--bezier);
+}
+.footerBox a > img {
+    width: 1.8em;
+    height: 1.8em;
+    fill: var(--contrast-color);
+}
+@media screen and (max-width: 380px) {
+    .footerBoxContent > textarea {
+        width: auto !important;
+        height: 10em !important;
+    }
+    .footerBox {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 650px) {
+    .footerBoxContent {
+        margin-top: .5em;
+    }
+}

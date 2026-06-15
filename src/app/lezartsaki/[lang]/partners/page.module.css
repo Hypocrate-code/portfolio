@@ -1,0 +1,154 @@
+.partnerSection {
+    --width-of-el: 14em;
+    --gap: 1.3em;
+    --padding: calc((100% - (var(--width-of-el) * var(--column-count) + (var(--column-count) - 1) * var(--gap))) / 2);
+    --column-count: 4;
+    width: auto;
+    box-sizing: content-box;
+    font-size: .87rem;
+    padding: 0;
+    padding-inline: var(--padding);
+    position: relative;
+    column-count: var(--column-count);    
+}
+.partnerSection::before,
+.partnerSection::after {
+    --color: hsla(0, 0%, 100%, 0.04);
+    top: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 10%;
+    transform: scaleY(1.5);
+    transform-origin: center;
+
+}
+.partnerSection::before {
+    background-image: radial-gradient(ellipse at left, var(--color) 0%, transparent 70%);
+    left: 0;
+}
+.partnerSection::after {
+    background-image: radial-gradient(ellipse at right, var(--color) 0%, transparent 70%);
+    right: 0;
+}
+.partnerEl {
+    --padding: .9em;
+    --border-radius: .3em;
+    --inner-gap: .7rem;
+    display: flex;
+    break-inside: avoid;
+    flex-direction: column;
+    width: var(--width-of-el);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    padding: var(--padding);
+    background-color: var(--mid-dark-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ebeaea' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    outline: 1px solid var(--mid-light-color);
+    height: max-content;
+    margin-bottom: var(--gap);
+    box-shadow: 0 0 .8em #ffffff18;
+    transition: all .17s var(--bezier);
+    transform: translateY(10%);
+    opacity: 0;
+    animation: canceler forwards 1s;
+    animation-play-state: paused;
+}
+@keyframes canceler {
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+.partnerEl.visible {
+    animation-play-state: running;
+}
+.partnerEl:focus-within,
+.partnerEl:hover {
+    outline: 1px solid var(--light-color);
+    /* background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ebeaea' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); */
+    
+}
+.partnerEl > * {
+    margin-inline: .2rem;
+    /* text-align: center; */
+    margin-top: var(--inner-gap);
+}
+.partnerEl img {
+    --size: calc(var(--width-of-el) - (var(--padding)*2));
+    border-radius: calc(var(--border-radius) / 1.3);
+    background-color: #040706;
+    height: var(--size);
+    object-fit: contain;
+    width: var(--size);
+    margin: 0 !important;
+}
+.partnerEl h2 {
+    width: auto;
+    height: auto;
+    font-size: 1.65em;
+    line-height: 106%;
+}
+.partnerEl h2::after {
+    width: 30%;
+    bottom: -6%;
+    /* left: 35%; */
+}
+.partnerEl p {
+    font-size: .9em;
+    margin-top: calc(var(--inner-gap) - .3rem);
+}
+.partnerEl a {
+    margin-bottom: auto;
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: var(--contrast-color);
+    height: 1.8em;
+    line-height: 165%;
+    font-weight: 300;
+    letter-spacing: .04em;
+    border-radius: calc(var(--border-radius) / 2);
+    border: .13em solid var(--contrast-color);
+    transition: background-color .2s var(--bezier);
+    box-sizing: border-box;
+    text-align: center;
+    margin-inline: 0;
+}
+.partnerEl a:focus-visible,
+.partnerEl a:hover {
+    background-color: transparent;
+    outline: none;
+}
+
+@media screen and (max-width: 1060px) {
+    .partnerSection {
+        --column-count: 3;
+    }
+}
+@media screen and (max-width: 830px) {
+    .partnerSection {
+        --column-count: 2;
+    }
+}
+@media screen and (max-width: 650px) {
+    .partnerEl {
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ebeaea' fill-opacity='0.17' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+}
+@media screen and (max-width: 450px) {
+    .partnerSection * {
+        text-align: center;
+    }
+    .partnerSection {
+        --column-count: 1;
+    }
+    .partnerSection::before,
+    .partnerSection::after {
+        width: 18%;
+        --color: hsla(0, 0%, 100%, 0.1);
+    }
+    .partnerSection {
+        font-size: 1.15rem;
+    }
+}

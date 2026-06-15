@@ -1,0 +1,103 @@
+.mainSectionContent {
+    z-index: 2;
+    position: absolute;
+    top: var(--top-distance-section);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: var(--height-section);
+    /* padding: 1em; */
+}
+
+.h1 {
+    font-size: 3em;
+    position: relative;
+    line-height: 130%;
+    padding-top: .1em;
+    padding-inline: .38em;
+    font-family: var(--primary-font);
+    letter-spacing: .01em;
+    margin-bottom: .25em;
+    background-color: var(--h1-and-p-color);
+    width: max-content;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%);
+  }
+.bottomMainSectionContent>p {
+    width: 23rem;
+    font-size: .9em;
+    margin-left: .15em;
+    line-height: 140%;
+    /* padding: .5em; */
+    font-weight: 400;
+    padding: .55em 1.2em;
+    background-color: var(--h1-and-p-color);
+    clip-path: polygon(var(--skewed-corner-size) 0, calc(100% - var(--skewed-corner-size)) 0, 100% 90%, 100% 100%, 0 100%, 0 90%);
+    backdrop-filter: blur(5px);
+
+}
+.bottomMainSectionContent>a {
+    font-family: var(--primary-font);
+    line-height: 185%;
+    color: var(--main-title-color);
+    height: var(--button-height);
+    /* padding-top: .1em; */
+    font-size: 1.1em;
+    width: 7em;
+    letter-spacing: .03em;
+    text-align: center;
+    background-color: transparent;
+    margin-left: .15em;
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%);
+    display: block;
+    transition: background-color .2s var(--bezier);
+    position: relative;
+    /* border: .15em var(--contrast-color) solid; */
+}
+.bottomMainSectionContent>a::before,
+.bottomMainSectionContent>a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: var(--contrast-color);
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%);
+}
+.bottomMainSectionContent>a::after {
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%);
+    height: calc(100% - .25em) ;
+    width:  calc(100% - .25em);
+    left: 50%;
+    top: 49.5%;
+    transform: translate(-50%, -50%);
+    transition: background-color .15s var(--bezier);
+}
+.bottomMainSectionContent>a:focus-visible::after,
+.bottomMainSectionContent>a:hover::after {
+    background-color: var(--dark-color);
+}
+@media screen and (max-width: 650px) {
+    .h1 {
+        margin-inline: 100%;
+        letter-spacing: .015em;
+    }
+    .mainSectionContent {
+        align-items: center;
+        width: 100%;
+    }
+    .bottomMainSectionContent > a {
+        margin-inline: auto;
+        padding-top: .06em;
+    }
+    .bottomMainSectionContent > p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 520px) {
+    .h1 {
+        font-size: 2.4em;
+        letter-spacing: .02em;
+    }
+}

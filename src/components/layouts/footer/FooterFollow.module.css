@@ -1,0 +1,22 @@
+.footerBox:nth-child(3) a:focus-visible,
+.footerBox:nth-child(3) a:hover {
+    background-color: var(--mid-dark-color);
+    outline: none;
+}
+.footerBox:nth-child(3) h3::after{
+    transition-delay: .4s !important;
+}
+.footerBoxContent a {
+    width: max-content;
+    height: max-content;
+}
+.footerBoxContent {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 8em;
+}
+@media screen and (max-width: 650px) {
+    .footerBox:nth-child(3) h3::after{
+        transition-delay: 0;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "h1": "Infos Pratiques",
+    "description": "Par ici, vous trouverez toutes les informations nécessaires pour une expérience sans accro, n'hésitez pas à nous questionner.",
+    "adress": "Maison de la vie associative, LEZARTSAKI, MVA - 204/126\n122 bis rue du Barbâtre, 51100 Reims",
+    "ourAdressTitle": "Où nous trouver ?",
+    "adressCartoTitle": "Comment joindre La Cartonnerie ?",
+    "websiteHeader": "Site Web",
+    "adressHeader": "Adresse",
+    "phoneHeader": "Numéro de téléphone",
+    "mailHeader": "Adresse E-Mail",
+    "cartonnerie": {
+        "website": "https://www.cartonnerie.fr/",
+        "adress": "La Cartonnerie\n84 rue du Docteur Lemoine, 51100 REIMS",
+        "phone": "03 26 36 72 40",
+        "mail": "info@cartonnerie.fr"
+    }
+}

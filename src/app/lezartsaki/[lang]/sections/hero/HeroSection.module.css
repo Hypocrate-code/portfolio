@@ -1,0 +1,37 @@
+.section {
+    --carousel-height: 60vh;
+    --skewed-corner-size: .3rem;
+    --button-height: 1.8em;
+    --height-section: calc(var(--carousel-height) + var(--button-height) + .23em);
+    --top-distance-section: calc(((100vh - var(--height-section)) / 2) + 1rem);  
+    --top-distance-section: calc(((100dvh - var(--height-section)) / 2) + 1rem);  
+    height: var(--height-section);
+    padding-top: var(--top-distance-section);
+    font-size: 1rem;
+    box-sizing: content-box;
+    margin-bottom: 2rem;
+}
+.ovale {
+    width: 90%;
+    height: 100%;
+    background-image: radial-gradient(closest-side,hsla(0, 0%, 100%, 0.2) 0%, transparent 100%);
+    /* background-image: radial-gradient(closest-side,red 0%, transparent 100%); */
+    transform: scaleY(1.14) translateY(-3%) translateX(5%);
+    /* border-radius: 50%; */
+}
+@media screen and (max-width: 650px) {
+    .section {
+        padding-inline: 0;
+        font-size: 1rem;
+    }
+    .ovale {
+        background-image: radial-gradient(closest-side,hsla(0, 0%, 100%, 0.25) 0%, transparent 100%);
+        /* transform: scaleY(1.1) translateX(5%); */
+    }
+}
+@media screen and (max-width: 520px) {
+    .section {
+        --carousel-height: 60vh;
+        font-size: 1.2rem;
+    }
+}

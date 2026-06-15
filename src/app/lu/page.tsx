@@ -174,7 +174,6 @@ function Lu() {
             'lu/models/ROOM_v15-v1.glb',
             (glb) => {
                 glb.scene.traverse(child =>{
-                    // console.log(child);2
                     
                     if (child instanceof THREE.Mesh) {
                         if (Object.keys(TextureMap).includes(child.name)) {

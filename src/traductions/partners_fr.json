@@ -1,0 +1,56 @@
+{
+    "h1": "Nos Partenaires",
+    "description": "Nos partenaires jouent un rôle essentiel dans notre succès : leur contribution et leur soutien nous permettent de donner de l'ampleur à nos projets et installent une dynamique territoriale importante. Et ils supportent aussi nos cerveaux fêlés !",
+    "alt": "Logo de ",
+    "redirection": "En savoir plus",
+    "partners" : [
+        {
+            "name": "La Cartonnerie",
+            "description": "Salle évènementielle à Reims.",
+            "link": "https://www.cartonnerie.fr/",
+            "logo": "/lezartsaki/assets/partners/lacartonnerie.png"
+        },
+        {
+            "name": "Réseau Grabuge",
+            "description": "Réseau de développement d'artistes et de structures culturelles.",
+            "link": "https://reseaugrabuge.com/",
+            "logo": "/lezartsaki/assets/partners/Grabuge.jpg"
+        },
+        {
+            "name": "Fédération des musiques métalliques",
+            "description": "Valorise les initiatives faites dans la musique Metal.",
+            "link": "https://federationdesmusiquesmetalliques.com/",
+            "logo": "/lezartsaki/assets/partners/FMM.jpg"
+        },
+        {
+            "name": "LMProd 2.0",
+            "description": "Boîte de communication de Marion Boesch, notre Chargée de Communication & Programmatrice.",
+            "link": "https://www.instagram.com/lmprod2.0/",
+            "logo": "/lezartsaki/assets/partners/LMProd.jpg"
+        },
+        {
+            "name": "Radio Primitive",
+            "description": "Radio populaire d'éducation médiatique.",
+            "link": "https://radioprimitive.fr/",
+            "logo": "/lezartsaki/assets/partners/Radio_Primitive.png"
+        },
+        {
+            "name": "Bokal",
+            "description": "Média rémois sur la scène culturelle locale.",
+            "link": "https://www.bokalreims.fr/",
+            "logo": "/lezartsaki/assets/partners/Bokal.jpg"
+        },
+        {
+            "name": "BGP Music Live",
+            "description": "Webzine français et international sur le Rock, le Metal & les musiques extrêmes.",
+            "link": "https://www.bgpmusiclive.com/",
+            "logo": "/lezartsaki/assets/partners/BGP.jpg"
+        },
+        {
+            "name": "ExactMusic InLive",
+            "description": "Partage la musique, c'est bon pour ta culture !",
+            "link": "https://www.facebook.com/p/ExactMusic-Inlive-100063604718974/",
+            "logo": "/lezartsaki/assets/partners/Exact_Music.jpg"
+        }
+    ]
+}

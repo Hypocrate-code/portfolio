@@ -1,0 +1,34 @@
+{
+    "h1": "Cerb3re",
+    "description": "CERB3RE Reims Metal Fest : un nouvel événement au coeur de la Champagne.",
+    "errorText": "Votre navigateur ne supporte pas les vidéos HTML5.",
+    "waitingText": "Plus d'infos très prochainement.",
+    "mainText": "CERB3RE Reims Metal Fest : un nouvel événement au coeur de la Champagne !\n\nPréparez-vous à vivre 3 jours d'intensité Metallique avec le CERB3RE Reims Metal Fest !\nUn événement qui se déploie sur un tryptique audacieux : \n3 jours, 3 lieux, et surtout, 3 raisons de célébrer notre Art de vivre !\n\nLe CERB3RE Reims Metal Fest n'est pas qu'un simple festival, c'est aussi une dynamique de soutien et de collaboration avec les acteurs de notre écosystème.\nDepuis 2018, cette envie de créer un festival pas comme les autres sur les Terres Rémoises trottait dans nos têtes : Reims mérite un événement annuel dédié à la richesse de notre esthétique.\nNotre ambition ? Ouvrir les portes de cette culture souvent méconnue, en la rendant accessible à tous, même aux familles.\n\nReady to rock ? \nLa team Lez Arts Aki vous attend avec impatience pour écrire ensemble ce nouveau chapitre de notre aventure.",
+    "firstDate" : {
+        "title": "Jour 1 : Vendredi 5 Décembre",
+        "mobileImg": "/lezartsaki/assets/cerb3re/05_12_2025/Page_Cerb3re.png",
+        "desktopImg": "/lezartsaki/assets/cerb3re/05_12_2025/Billetterie.png",
+        "text": "Préparez-vous à vivre 3 jours d'intensité Metallique les Zamis !\n\nCette première soirée, nous l’avons voulu à l’image de la toute première date organisée par l’asso : intimiste et électrique.\n\nEn choisissant Le Lieu comme écrin d’ouverture, c’est la proximité des artistes avec le public qui sera le maître mot.\n\nAu programme : Inward (Deathcore / Metal Modern), Death Awaits (Death / Thrash Metal) et Survival Zero (Metal)",
+        "link": "https://www.helloasso.com/associations/lez-arts-aki/evenements/cerb3re-inward-death-awaits-survival-zero",
+        "btnText": "Billetterie du 5 Décembre",
+        "altPoster": "Affiche de la première date de notre festival de musique metal, le Cerb3re édition 2025."
+    },
+    "secondDate" : {
+        "title": "Jour 2 : Samedi 6 Décembre",
+        "mobileImg": "/lezartsaki/assets/cerb3re/06_12_2025/Page_Cerb3re.png",
+        "desktopImg": "/lezartsaki/assets/cerb3re/06_12_2025/Billetterie.png",
+        "text": "Lez Arts Aki vous convie à La Cartonnerie, samedi 06 décembre 2025, avec une affiche aussi folle qu’éclectique !\n\nAu programme : Les Tambours du Bronx (Metal Industriel), Benighted (Brutal Death Metal), Knuckle Head (Dark Country / Stoner Rock), Akiavel (Death Metal) et Northern Lights (Newcore).\n\n1 lieu, 5 groupes, et encore plus d’envie de vous retrouver dans le Pit !",
+        "link": "https://www.cartonnerie.fr/evenement/lez-arts-aki-cerb3re/",
+        "btnText": "Billetterie du 6 Décembre",
+        "altPoster": "Affiche de la seconde date de notre festival de musique metal, le Cerb3re édition 2025."
+    },
+    "thirdDate" : {
+        "title": "Jour 3 : Dimanche 7 Décembre",
+        "mobileImg": "/lezartsaki/assets/cerb3re/07_12_2025/Page_Cerb3re.png",
+        "desktopImg": "/lezartsaki/assets/cerb3re/07_12_2025/Billetterie.png",
+        "text": "Le CERB3RE Reims Metal Fest n'est pas qu'un simple festival, c'est aussi l’ouverture des portes du Metal, souvent méconnu, en le rendant accessible à tous !\n\nCette journée du dimanche, nous l’avons imaginé pour les petits comme les plus grands.\n\nAu programme : une exposition photo de Camille Brulé, une conférence animée par Corentin Charbonnier sur cette musique que nous avons érigée en Arts, et un concert “Metal For Kids” à destination du jeune public.\n\nEn moment convivial, de partages, d’échanges et transmission de nos valeurs !\n\nÀ vivre tous ensemble les Zamis !",
+        "link": "https://www.helloasso.com/associations/lez-arts-aki/evenements/cerb3re-une-expo-une-conference-un-metal-kids",
+        "btnText": "Billetterie du 7 Décembre",
+        "altPoster": "Affiche de la troisième date de notre festival de musique metal, le Cerb3re édition 2025."
+    }
+}

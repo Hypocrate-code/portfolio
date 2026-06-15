@@ -1,0 +1,218 @@
+.dateContainer {
+    --date-margin-top: 2em;
+    --date-padding-bottom: .7em;
+    width: 90%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 3em 1fr;
+    gap: 3em;
+    margin-top: var(--date-margin-top);
+    font-size: 1rem;
+    position: relative;
+    padding-bottom: var(--date-padding-bottom);
+}
+.dateContainer h3 {
+    width: auto;
+    white-space: pre-line;
+    height: min-content;
+    display: block;
+    margin-block: 1rem;
+    /* margin-bottom: 1em; */
+    line-height: 120%;
+}
+.dateContainer:nth-last-child(1) h3 {
+    position: relative;
+    top: 0;
+}
+.dateContainer h3::after {
+    width: 30%;
+    bottom: -.16em;
+    height: .125em;
+}
+.titleBox {
+    position: sticky;
+    top: 2em;
+    height: max-content;
+}
+.dateContainer:nth-last-child(1) .titleBox img {
+    margin-left: auto;
+    display: block;
+    height: auto;
+    width: 55%;
+    margin-top: 2em;
+    /* clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%); */
+    transform: translateX(-10%);
+    opacity: 0;
+}
+.dateContainer.seen img,
+.dateContainer.seen .titleBox img {
+    opacity: 1;
+    transform: none;
+}
+.dotAndLineContainer {
+    --sizeMax: 1.25em;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.dot {
+    margin-inline: auto;
+    z-index: 10;
+    position: absolute;
+    width: var(--sizeMax);
+    height: var(--sizeMax);
+    background-color: var(--title-color);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dot::after {
+    --difference-of-size: .45em;
+    --sizeMin : calc(var(--sizeMax) - var(--difference-of-size));
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--sizeMin);
+    height: var(--sizeMin);
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    top: calc( (var(--difference-of-size) / 2) + .002em );
+    left: calc((var(--sizeMax) / 2));
+    transform: translateX(-50%);
+}
+.dotAndLineContainer::after {
+    --width-of-bar: .36em;
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: var(--width-of-bar);
+    height: calc(100% + var(--date-margin-top) + var(--date-padding-bottom) + (var(--sizeMax) / 3));
+    background-color: var(--text-color);
+    left: 50%;
+    transition: transform 1.3s var(--bezier);
+    transform: skewY(-45deg) translateX(-50%) translateY(.5rem) scaleY(0);
+    transform-origin: top;
+    border-radius: calc(var(--width-of-bar) / 2) calc(var(--width-of-bar) / 2) 0 0;
+}
+.dateContainer.seen .dotAndLineContainer::after {
+    transform: skewY(-45deg) translateX(-50%) translateY(.5rem) scaleY(1);
+}
+.dateContainer:nth-last-child(1) .dotAndLineContainer::after{
+    display: none;
+}
+.dateContainer:nth-last-child(1) .titleBox {
+    position: unset;
+}
+.content {
+    margin-top: 1rem;
+    width: 80%;
+}
+@keyframes opening {
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%);
+    }
+}
+@keyframes openingLast {
+    50% {
+        clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 100% 100%);
+    }
+    to {
+        clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+.content > p {
+    font-size: .92em;
+    line-height: 155%;
+}
+.dateContainer img {
+    margin-top: 1.3em;
+    width: 95%;
+    border-radius: .3em;
+    height: auto;
+    /* clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%); */
+    /* clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); */
+    transition: all .5s var(--bezier);
+    transform: translateX(10%);
+    opacity: 0;
+    /* clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%); */
+}
+
+.dateContainer:nth-last-child(1) img {
+    width: 75%;
+}
+
+@media screen and (max-width: 1200px) {
+    .dateContainer {
+        width: 95%;
+    }
+    .titleBox h3 {
+        white-space: unset;
+    }
+}
+@media screen and (max-width: 900px) {
+    .dateContainer {
+        grid-template-columns: 3rem 1fr;
+        grid-template-rows: max-content auto;
+        gap: 0 1rem;
+    }
+    .content {
+        margin-block: .2em;
+        padding-left: .7em;
+        width: auto;
+    }
+    .content img {
+        max-width: 17em;
+        /* display: block; */
+        /* margin-inline: auto; */
+    }
+    .dotAndLineContainer {
+        grid-area: 1/1/3/2;
+    }
+    .titleBox img {
+        display: none !important;
+    }
+    .titleBox {
+        position: unset;
+    }
+    .dateContainer:nth-last-child(1) img {
+        width: 6em;
+        height: auto;
+        object-fit: cover;
+        /* margin-top: 0; */
+        margin: 0 2em 0 .3em;
+        /* margin-right: 1em; */
+    }
+    .dateContainer:nth-last-child(1) .content {
+        display: flex;
+    }
+}
+@media screen and (max-width: 450px) {
+    .dateContainer {
+        font-size: 1.2rem;
+    }
+    .dateContainer:nth-last-child(1) img {
+        width: 70%;
+        height: auto;
+        /* object-fit: cover; */
+        /* margin-top: 0; */
+        margin: 1em auto;
+        /* display: block; */
+        /* margin-right: 1em; */
+    }
+    .dateContainer:nth-last-child(1) .content {
+        display: block;
+    }
+}
+@media screen and (max-width: 380px) {
+    .titleBox h3 {
+        white-space: pre-line;
+    }
+    .titleBox h3::after {
+        width: 20%;
+    }
+}

@@ -1,0 +1,34 @@
+.logoForMobile {
+    --size: 3.2rem;
+    position: absolute;
+    right: 3rem;
+    /* transform: translateX(50%); */
+    top: calc(var(--top) - .1rem);
+    width: var(--size);
+    height: var(--size);
+    border-radius: .3em;
+    display: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.logoForMobile img {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 750px) {
+    .logoForMobile {
+        display: block;
+        --top: calc( (calc( calc((100vh - (60vh + 1.8rem + .23rem)) / 2) + 1rem) - var(--size)) / 2 );
+        --top: calc( (calc( calc((100dvh - (60vh + 1.8rem + .23rem)) / 2) + 1rem) - var(--size)) / 2 );
+    }
+}
+@media screen and (max-width: 520px) {
+    .logoForMobile {
+        --top: calc( (calc( calc((100vh - (60vh + 2.16rem + .276rem)) / 2) + 1rem) - var(--size)) / 2 );
+        --top: calc( (calc( calc((100dvh - (60vh + 2.16rem + .276rem)) / 2) + 1rem) - var(--size)) / 2 );
+    }
+}
+@media screen and (max-width: 430px) {
+    .logoForMobile {
+        --size: 4.5rem;
+    }
+}

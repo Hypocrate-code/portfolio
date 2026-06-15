@@ -1,0 +1,95 @@
+{
+    "hero": {
+        "h1": "Reims on the way",
+        "bottomDescription": "On the lands of Reims, we have been restoring Metal live music's nobility, for more than YEAR years.",
+        "cta": "Learn about it",
+        "alts": {
+            "Landmvrks": "The singer of Landmvrks's band.",
+            "tagada": "The drummer of Tagada Jones's band.",
+            "theDevilWearsPrada": "Two members of The Devil Wears Prada's band.",
+            "crowd": "A crowd of Metal music fans, at one of our concert."
+        }
+    },
+    "descriptionSection": {
+        "h2": "Lez Arts Aki in short",
+        "quote": "At Lez Arts Aki, we are driven by music, and especially Metal music. Since 2018, our goal has been to animate the region of Reims by organizing cultural events with a Metallic twist. Our completely crazy team of volunteers of about ten people, is more than determined to carry the banner of Champagne's Metal music.",
+        "author": "Chief of Lez Arts Aki",
+        "boldString": "Lez Arts Aki",
+        "redString": "Champagne's Metal",
+        "alt": "Lez Arts Aki's team, standing in front of La Cartonnerie in Reims, the hall of their first concerts."
+    },
+    "timeline": {
+        "title": "Lez Arts Aki in a few dates",
+        "dates": [
+            {
+                "title": "May 2018, Our beginnings \nat the Dropkick Bar",
+                "text": "Lez Arts Aki had their first steps in the Dropkick Bar of Reims. This evening gathered the bands Undead, Sky Machine, and Midnight Blackout.",
+                "alt": "Crowd at a concert in April 2024.",
+                "url": "/lezartsaki/assets/home/timeline/L2A - CROWD-Avril 24.jpg",
+                "boldStrings" : ["Lez Arts Aki", "Dropkick Bar de Reims"],
+                "redStrings" : ["Undead", "Sky Machine", "Midnight Blackout"]
+            },
+            {
+                "title": "2019, First Sold-Out at L'Atmosphère in Rethel",
+                "text": "A new milestone reached with our first sold-out at L'Atmosphère of Rethel, where legends of Metal like Ultra Vomit, Tagada Jones, and Black Bomb A inflammed the show.",
+                "alt": "The guitarist of Black Bomb A's band, in 2019.",
+                "url": "/lezartsaki/assets/home/timeline/Black Bomb A_2019.jpg",
+                "boldStrings" : ["L'Atmosphère de Rethel"],
+                "redStrings" : ["Ultra Vomit", "Tagada Jones", "Black Bomb A"]
+            },
+            {
+                "title": "2021, Festival Arts en Pagaille\nin Bétheny",
+                "text": "The Arts en Pagaille's festival in Bétheny allowed us to have bands like Loudblast, Unswabbed, and Protogonos play ; a powerful return after Covid's pandemic period.",
+                "alt": "The singer and the guitarist of Protogonos's band, in 2022.",
+                "url": "/lezartsaki/assets/home/timeline/Protogonos_2022.jpg",
+                "boldStrings" : ["Arts en Pagaille", "Bétheny"],
+                "redStrings" : ["Loudblast", "Unswabbed", "Protogonos"]
+            },
+            {
+                "title": "2022, Two Sold-Out Concerts at La Cartonnerie in Reims",
+                "text": "This year was a breakpoint for us, with two Sold-Out concerts at La Cartonnerie in Reims, where Forest In Blood, Disconnected, and Inward performed, confirming our anchored presence on the Metal music stage of Reims.",
+                "alt": "The band Disconnected.",
+                "url": "/lezartsaki/assets/home/timeline/Crisix_2022.jpg",
+                "boldStrings" : ["La Cartonnerie de Reims"],
+                "redStrings" : ["Forest In Blood", "Disconnected", "Inward"]
+            }
+        ],
+        "lastDate" : {
+            "title": "More than 20 dates since, with Local and National Artists",
+            "text": "Since these first dates, Lez Arts Aki organized more than 20 events, mixing local talents and big national names, as Maudits, Landmvrks, and Dagoba.",
+            "alt": "Singer of Landmvrks's band.",
+            "url": "/lezartsaki/assets/home/timeline/LANDMVRKS.jpg",
+            "secondAlt" : "Guitarist of the band The Devil Wears Prada.",
+            "secondUrl" : "/lezartsaki/assets/home/timeline/L2A - THE DEVIL WEARS PRADA.jpg",
+            "boldStrings" : ["Lez Arts Aki"],
+            "redStrings" : ["Maudits", "Landmvrks", "Dagoba"]
+        }
+    },
+    "covid": {
+        "title": "Lez Arts Aki during Pandemic",
+        "paragraph": "We decided in 2020 and 2021 to form a collective : Les Rémois se bougent, translated by Reims on the way, to create despite the crisis. 3 covers of famous Metal musics were performed by Reims's ecosystem.",
+        "redStrings": ["Les Rémois se bougent", "Reims on the way", "Reims's ecosystem"],
+        "boldStrings": ["3 covers of famous Metal musics"],
+        "videoClickTitle": "Watch the Cover",
+        "videos": [
+            {
+                "image":"/lezartsaki/assets/home/covid/Fuel.jpg",
+                "link": "https://www.youtube.com/watch?v=Y-4uFdFN6r8",
+                "title": "Fuel, by Metallica",
+                "by": "Performed by Protogonos / Dirty Raven / Collapsing / Under All"
+            },
+            {
+                "image":"/lezartsaki/assets/home/covid/Backbone.jpg",
+                "link": "https://www.youtube.com/watch?v=_6orgVZ61nM",
+                "title": "Backbone, by Gojira",
+                "by": "Performed by Protogonos / Inward / Nebulizar / N..A.N / Pierre Nizet"
+            },
+            {
+                "image":"/lezartsaki/assets/home/covid/Cowboys_from_hell.jpg",
+                "link": "https://www.youtube.com/watch?v=cV8VuE5bbOc",
+                "title": "Cowboys from Hell, \nby Pantera",
+                "by": "Protogonos / Sightless / Cedric Vassal / The Butcher’s Rodeo"
+            }
+        ]
+    }
+}

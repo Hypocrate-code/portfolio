@@ -1,0 +1,69 @@
+{
+    "footer": {
+        "utils":{
+            "title": "Useful Links",
+            "links" : {
+                "infos": "Practical Info",
+                "mentions": "Legal Notices",
+                "cgu": "Terms and Conditions",
+                "confidPolicy": "Confidentiality Policy"
+            }
+        },
+        "contact": {
+            "title": "Contact Us",
+            "themesOfRequest" : {
+                "title" : "-- Choose the request's subject --",
+                "adhesion" : "Membership",
+                "program": "Programming",
+                "infos": "Practical Info",
+                "other": "Other"
+            },
+            "placeholders" : {
+                "email": "Your email address",
+                "comment": "Your message",
+                "send": "Send Message"
+            },
+            "errors": {
+                "subject": "Please choose a subject.",
+                "email": "Please enter a valid email.",
+                "message": "Please enter a message."
+            },
+            "status": {
+                "error": "Internal Error.",
+                "waiting": "Sending email...",
+                "sent": "Email sent with success !"
+            }
+        },
+        "follow": {
+            "title": "Follow Us"
+        }
+    },
+    "home": {
+        "title": "Home",
+        "description": "Official website of Lez Arts Aki's association, setting up Metal music concerts and festivals."
+    },
+    "events": {
+        "title": "Events",
+        "description": "The concerts and festivals organized by Lez Arts Aki's association since its creation."
+    },
+    "partners": {
+        "title": "Partners",
+        "description": "The structures helping and leading us through our projets made by Lez Arts Aki's association, making it possible to promote Metal music's evolution."
+    },
+    "team": {
+        "title": "L2A Team",
+        "description": "Presentation of the whole Lez Arts Aki's team, all of its members."
+    },
+    "404": {
+        "title": "404 Error",
+        "description": "404 error page, the route specified doesn't exist."
+    },
+    "infos" : {
+        "title": "Practical Info",
+        "description": "All the infos you need in order to contact us."
+    },
+    "Cerb3re" : {
+        "title": "Cerb3re",
+        "description": "A Metal Music Festival made in Champagne."
+    }
+}

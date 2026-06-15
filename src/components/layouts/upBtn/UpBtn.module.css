@@ -1,0 +1,91 @@
+.upBtn {
+    --size: 4.2em;
+    --corner-width: .25em;
+    --clip-path: polygon(var(--corner-width) 0%,
+        calc(100% - var(--corner-width)) 0%, 
+        100% calc(var(--corner-width) * var(--reducing-coef-corner-width)), 
+        100% calc(100% - calc(var(--corner-width) * var(--reducing-coef-corner-width))), 
+        calc(100% - var(--corner-width)) 100%, 
+        var(--corner-width) 100%, 
+        0% calc(100% - calc(var(--corner-width) * var(--reducing-coef-corner-width))), 
+        0% calc(var(--corner-width) * var(--reducing-coef-corner-width)));
+    --reducing-coef-corner-width: 0.8;
+    font-size: 1rem;
+    position: fixed;
+    right: 1.8em;
+    bottom: 1.6em;
+    width: calc(var(--size) * 0.55);
+    height: auto;
+    z-index: 999;
+    border-radius: var(--corner-width);
+    transition: transform .5s var(--bezier), opacity .5s var(--bezier), box-shadow .2s var(--bezier);
+    transform: translateX(calc(100% + 2em));
+    /* opacity: 0; */
+    box-shadow: 0 0 1em hsla(0,0%, 100%, 0.1);
+    background-color: #1717172a;
+    /* background-color: var(--navbar-color); */
+    opacity: 0.7;
+    backdrop-filter: blur(5px);
+    outline: .16em solid var(--text-color);
+    padding: .35em;
+    /* padding: .5em; */
+    /* background-color: var(--text-color); */
+    /* clip-path: var(--clip-path); */
+    visibility: hidden;
+}
+.visible {
+    transform: none;
+    opacity: 1;
+}
+/* .upBtn::before,
+.upBtn::after {
+    content: "";
+    display: block;
+}
+.upBtn::before {
+    inset: 0;
+    transform: scaleY(0.925) scaleX(0.9);
+    transform-origin: center;
+    z-index: -1;
+    background-color: #171717;
+    clip-path: var(--clip-path);
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+.upBtn img {
+    height: auto;
+    width: 100%;
+    margin-inline: auto;
+    display: block;
+    animation: up-and-down .7s var(--bezier) infinite;
+    animation-play-state: paused;
+}
+.upBtn img:nth-child(2) {
+    width: 80%;
+    margin-top: .2em;
+}
+.upBtn:focus-visible img:nth-child(1),
+.upBtn:hover img:nth-child(1) {
+    animation-play-state: running;
+}
+.upBtn:focus-visible,
+.upBtn:hover {
+    box-shadow: 0 0 1em hsla(0,0%, 100%, 0.15);
+}
+
+@keyframes up-and-down {
+    25% {
+        transform: translateY(-2%);
+    }
+    75% {
+        transform: translateY(1%);
+    }
+}
+@media screen and (max-width: 440px) {
+    .upBtn {
+        --size: 5.6em;
+        bottom: 2.5em;
+        /* right: 2em; */
+    }
+}

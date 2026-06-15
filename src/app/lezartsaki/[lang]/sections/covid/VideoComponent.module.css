@@ -1,0 +1,76 @@
+.videoBox {
+    --border-radius: .47rem;
+    background-color: var(--mid-dark-color);
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ebeaea' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* gap: .2rem; */
+    flex: 0;
+    border-radius: var(--border-radius);
+    padding: 1.05em;
+    flex-grow: 0;
+    text-align: center;
+    transition: all .17s var(--bezier);
+    outline: 1px solid var(--mid-light-color);
+    box-shadow: 0 0 .8em #ffffff18;
+    max-width: 16em;
+}
+.videoBox:focus-within,
+.videoBox:hover {
+    outline: 1px solid var(--light-color);
+    /* background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ebeaea' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); */
+    
+}
+.videoBox img {
+    border-radius: calc(var(--border-radius) / 2);
+    object-fit: cover;
+    min-width: 12.5em;
+    width: auto;
+    height: auto;
+}
+.videoBox h3 {
+    margin-block: .2rem;
+    width: auto;
+    color: var(--title-color);
+    font-size: 1.05em;
+    font-family: inherit;
+    height: max-content;
+    font-weight: 600;
+    letter-spacing: 1%;
+    white-space: pre-line;
+}
+.videoBox h3::after {
+    display: none;
+}
+.videoBox p {
+    font-size: .8em;
+    line-height: 140%;
+    font-weight: 400;
+    margin-bottom: .4rem;
+}
+.videoBox a {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    background-color: var(--contrast-color);
+    height: 1.85em;
+    line-height: 165%;
+    font-weight: 300;
+    letter-spacing: .07em;
+    border-radius: calc(var(--border-radius) / 2);
+    border: .13em solid var(--contrast-color);
+    transition: background-color .2s var(--bezier);
+    box-sizing: border-box;
+}
+
+.videoBox a:focus-visible,
+.videoBox a:hover {
+    background-color: transparent;
+    outline: none;
+}
+@media screen and (max-width: 650px) {
+    .videoBox {
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ebeaea' fill-opacity='0.17' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+}

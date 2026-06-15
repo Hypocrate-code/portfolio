@@ -1,0 +1,69 @@
+{
+    "footer": {
+        "utils":{
+            "title": "Liens Utiles",
+            "links" : {
+                "infos": "Infos Pratiques",
+                "mentions": "Mentions Légales",
+                "cgu": "Conditions Générales d'Utilisation (CGU)",
+                "confidPolicy": "Politique de confidentialité"
+            }
+        },
+        "contact": {
+            "title": "Nous Contacter",
+            "themesOfRequest" : {
+                "title" : "-- Choisir le sujet de la requête --",
+                "adhesion" : "Adhésion",
+                "program": "Programmation",
+                "infos": "Infos Pratiques",
+                "other": "Divers"
+            },
+            "placeholders" : {
+                "email": "Votre adresse email",
+                "comment": "Votre message",
+                "send": "Envoyer Le Message"
+            },
+            "errors": {
+                "subject": "Veuillez choisir un sujet.",
+                "email": "Entrez une adresse e-mail valide.",
+                "message": "Veuillez entrer un message."
+            },
+            "status": {
+                "error": "Erreur Sytème.",
+                "waiting": "Email en cours d'envoi...",
+                "sent": "Email envoyé avec succès !"
+            }
+        },
+        "follow": {
+            "title": "Nous Suivre"
+        }
+    },
+    "home": {
+        "title": "Accueil",
+        "description": "Site officiel de l'association Lez Arts Aki, organisatrice de concerts et festivals de musique Metal."
+    },
+    "events": {
+        "title": "Événements",
+        "description": "Les concerts et festivals organisés par l'association Lez Arts Aki depuis sa création."
+    },
+    "partners": {
+        "title": "Partenaires",
+        "description": "Les structures nous accompagnant et nous aidant à mettre en place les projets Lez Arts Aki, nous permettant de favoriser l'entraide pour l'évolution de la scène Metale."
+    },
+    "team": {
+        "title": "Team L2A",
+        "description": "Présentation de l'ensemble des membres de l'association Lez Arts Aki"
+    },
+    "404": {
+        "title": "Erreur 404",
+        "description": "Page d'erreur 404, la route spécifiée n'existe pas."
+    },
+    "infos" : {
+        "title": "Infos Pratiques",
+        "description": "Toutes les informations dont vous avez besoin pour nous contacter."
+    },
+    "Cerb3re" : {
+        "title": "Cerb3re",
+        "description": "Un Festival Metal Champenois."
+    }
+}
