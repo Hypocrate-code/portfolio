@@ -21,7 +21,7 @@ export default function Home() {
             <li className={styles.li}>2023 - <a className={styles.a} href="https://Hypocrate-code.github.io/Robusto">Robusto</a> (vente web) création d'entreprise de vente de café</li>
             <li className={styles.li}>2023 - <a className={styles.a} href="https://Hypocrate-code.github.io/Dernier_Choix">Dernier Choix</a> (jeu web) histoire à choix et fins multiples, sur notre rapport aux objets (sur grands écrans uniquement)</li>
           </ul>
-          <p className={styles.p}>made by Hypocrate - everything available on <a className={styles.a} href="github.com/Hypocrate-code">GitHub</a></p>
+          <p className={styles.p}>made by Hypocrate - everything available on <a className={styles.a} href="https://github.com/Hypocrate-code">GitHub</a></p>
         </section>
       </body>
     </html>
